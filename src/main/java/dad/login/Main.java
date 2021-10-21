@@ -1,9 +1,5 @@
 package dad.login;
 
-import dad.login.auth.AuthService;
-import dad.login.auth.FileAuthService;
-import dad.login.auth.LdapAuthService;
-
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
@@ -16,7 +12,7 @@ public class Main {
 //		System.out.println("David Carradine : " + ldap.login("dcarradine", "kungfu"));
 //		System.out.println("David Carradine : " + ldap.login("dcarradine", "karate"));
 //		System.out.println("Michael Knight  : " + ldap.login("mknight", "kit"));
-		
+		App.main(args);
 		
 	}
 

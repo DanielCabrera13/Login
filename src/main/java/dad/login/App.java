@@ -20,7 +20,6 @@ public class App extends Application {
 		loginStage.setTitle("LOGIN");
 		loginStage.setScene(loginScene);
 		loginStage.show();
-
 	}
 	
 	public void init() throws Exception{
@@ -34,7 +33,7 @@ public class App extends Application {
 
 	public static void main(String[] args) {
 		
-
+		launch(args);
 	}
 
 }
