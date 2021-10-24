@@ -59,27 +59,28 @@ public class LoginView extends VBox {
 		cols[0].setHgrow(Priority.NEVER);
 		cols[1].setHgrow(Priority.ALWAYS);
 		
-		HBox h3 = new HBox(5, accederButton,cancelarButton);
-		h3.setSpacing(5);
-		h3.setFillHeight(false);
-		h3.setAlignment(Pos.CENTER);
+		HBox h = new HBox(5, accederButton,cancelarButton);
+		h.setSpacing(5);
+		h.setFillHeight(false);
+		h.setAlignment(Pos.CENTER);
 		
 		
-		setSpacing(5);//espacio entre elementos dentro del VBox
-		setFillWidth(false);//Para que no ocupen todo el ancho
-		setAlignment(Pos.CENTER);//para ponerlo en el centro
+		this.setSpacing(5);//espacio entre elementos dentro del VBox
+		this.setFillWidth(false);//Para que no ocupen todo el ancho
+		this.setAlignment(Pos.CENTER);//para ponerlo en el centro
+		this.getChildren().addAll(formPane, h);
 		
 	}
 	
-	public TextField getuserText() {
+	public TextField getUserText() {
 		return userText;
 	}
 	
-	public PasswordField getpsswdText() {
+	public PasswordField getPsswdText() {
 		return psswdText;
 	}
 	
-	public CheckBox getuseLdapCheck() {
+	public CheckBox getUseLdapCheck() {
 		return useLdapCheck;
 	}
 	

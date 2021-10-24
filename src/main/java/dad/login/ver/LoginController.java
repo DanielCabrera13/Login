@@ -16,8 +16,8 @@ public class LoginController {
 
 	public LoginController() {
 
-		view.getuserText().textProperty().bindBidirectional(model.usuarioProperty());
-		view.getpsswdText().textProperty().bindBidirectional(model.claveProperty());
+		view.getUserText().textProperty().bindBidirectional(model.usuarioProperty());
+		view.getPsswdText().textProperty().bindBidirectional(model.claveProperty());
 
 		view.getAccederButton().setOnAction(e -> onAccederAction(e));
 		view.getCancelarButton().setOnAction(e -> onCancelarAction(e));
